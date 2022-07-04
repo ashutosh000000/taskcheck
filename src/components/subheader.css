@@ -1,0 +1,13 @@
+.subheader-cont{
+    background-color: blueviolet;
+    display:flex;
+
+    width: 100%;
+    height:35px;
+}
+.pant{
+    width:60px;
+}
+.shirt{
+    width: 60px;
+}

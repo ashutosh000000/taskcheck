@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import React,{useState} from 'react';
 import './App.css';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Card from './components/Card';
+import Header from './components/Header';
+import Subheader from './components/Subheader';
+import Shirt from './components/subcomponent/Shirt';
+import Pant from './components/subcomponent/Pant';
 function App() {
+ 
+ let [input, setInput] = useState('');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+    <BrowserRouter>
+    <Header setInput={setInput}/>
+    <Subheader/>
+    {/* <Card /> */}
+      <Routes>
+        <Route path="/" element={<Card input={input}/>}/>
+          <Route path="/shirt" element = {<Shirt/>} />
+        <Route path="/pant" element = {<Pant/>} />
+      
+      </Routes>
+    </BrowserRouter>
+    
+    </>
   );
 }
 

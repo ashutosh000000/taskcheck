@@ -1,0 +1,21 @@
+.cards-cont{
+    display:flex;
+    
+}
+
+.card-cont{
+    background-color: red;
+    width:100px;
+    height:200px;
+    margin:10px;
+    border-radius: 3px;
+}
+
+.image-cont{
+height:60%;
+width:100%;
+}
+.image{
+    height:100%;
+width:100%;
+}

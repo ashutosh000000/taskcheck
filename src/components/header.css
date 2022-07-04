@@ -1,0 +1,28 @@
+.header-cont{
+    background-color: darkblue;
+    height:40px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+
+}
+
+.search-bar-c{
+    /* background-color: red; */
+    width:50%;
+    height:35px;
+    display:flex;
+    justify-content: center;
+    
+}
+.search-bar{
+    width:70%;
+}
+.cart-c{
+    /* background-color: red; */
+    color: red;
+    width:60px;
+    display: flex;
+    justify-content: center;
+
+}
